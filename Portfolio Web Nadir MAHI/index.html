@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadir Mahi | Portfolio Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">NADIR MAHI <br><span>Portfolio</span></div>
+    <nav class="main-nav">
+        <a href="#home" class="nav-link">HOME</a>
+        <a href="#work" class="nav-link">WORK</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+    </nav>
+    <div class="header-right">
+        <a href="assets/cvnadirmahi.pdf" download class="cv-glow-btn">CV</a>
+        
+        <div class="lang-switch-box">
+            <input type="checkbox" id="lang-tog">
+            <label for="lang-tog" class="switch-label">
+                <span class="text-fr">FR</span>
+                <span class="text-ing">ING</span>
+                <div class="ball"></div>
+            </label>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <section class="hero" id="home">
+        <h1 class="hero-title">HI I AM <br> NADIR <span class="stroke">MAHI</span></h1>
+        <p class="hero-desc" id="hero-text">Développeur full-stack passionné. Étudiant en BTS SIO SLAM au CNED.</p>
+    </section>
+
+    <section class="skills">
+        <h2 class="sect-title">Skills :</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><div class="pill"><img src="assets/Html_Logo.png"><div class="bar-track"><div class="fill" style="width:92%"></div></div></div><div class="badge">92%</div></div>
+            <div class="skill-card"><div class="pill"><img src="assets/Css_Logo.png" class="css-fix"><div class="bar-track"><div class="fill" style="width:97%"></div></div></div><div class="badge">97%</div></div>
+            <div class="skill-card"><div class="pill"><img src="assets/Js_Logo.png"><div class="bar-track"><div class="fill" style="width:81%"></div></div></div><div class="badge">81%</div></div>
+            <div class="skill-card"><div class="pill"><img src="assets/Blender_Logo.png"><div class="bar-track"><div class="fill" style="width:93%"></div></div></div><div class="badge">93%</div></div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <h2 class="sect-title">Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="p-card">
+                <img src="tubnails/genlock.png" alt="GenLock">
+                <div class="p-info">
+                    <h3>GEN LOCK</h3>
+                    <p>Générateur de mots de passe robustes.</p>
+                    <button onclick="copyText('https://github.com/LabSleep/GenLock.git')" class="git-btn">COPY GIT</button>
+                </div>
+            </div>
+            <div class="p-card empty"><div class="placeholder-text">EN COURS</div></div>
+            <div class="p-card empty"><div class="placeholder-text">EN COURS</div></div>
+        </div>
+    </section>
+
+    <footer class="contact" id="contact">
+        <h2 class="sect-title">Contact</h2>
+        <div class="contact-ui">
+            <div class="contact-row">
+                <p>Email : <strong>NADIRMAHI6@GMAIL.COM</strong></p>
+                <button class="copy-btn" onclick="copyText('NADIRMAHI6@GMAIL.COM')">📋</button>
+            </div>
+            <div class="contact-row">
+                <p>Tel : <strong>06 30 04 58 43</strong></p>
+                <button class="copy-btn" onclick="copyText('0630045843')">📋</button>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
